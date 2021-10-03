@@ -1,4 +1,3 @@
-module.exports = require('./lib/axios');
 const axios = require('axios');
 
 async function makeGetRequest() {
@@ -8,7 +7,7 @@ async function makeGetRequest() {
 
   let response = res.data.data;
 
-  console.log(response);
+  //console.log(response);
  for (let i=0;i<response.length;i++ ){
      if (response[i].Year==='2019' && response[i].Population===328239523){
         
